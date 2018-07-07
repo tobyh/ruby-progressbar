@@ -15,6 +15,8 @@ class   Molecule
     :e => [:time,         :estimated_with_unknown_oob],
     :E => [:time,         :estimated_with_friendly_oob],
     :f => [:time,         :estimated_with_no_oob],
+    :n => [:time,         :elapsed_with_no_label],
+    :N => [:time,         :estimated_with_no_label],
     :B => [:bar,          :complete_bar],
     :b => [:bar,          :bar],
     :w => [:bar,          :bar_with_percentage],

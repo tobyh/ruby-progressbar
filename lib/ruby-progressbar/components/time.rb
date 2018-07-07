@@ -27,6 +27,16 @@ class   Time
     "#{ELAPSED_LABEL}: #{elapsed}"
   end
 
+  def elapsed_with_no_label
+    elapsed
+  end
+
+  def estimated_with_no_label
+    self.out_of_bounds_time_format = :friendly
+
+    progress.finished? ? elapsed : estimated
+  end
+
   protected
 
   def estimated_with_no_oob
